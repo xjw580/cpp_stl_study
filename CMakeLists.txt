@@ -13,3 +13,6 @@ get_filename_component(VCToolsInstallDir "$ENV{VCToolsInstallDir}" ABSOLUTE)
 set(STD_IXX_PATH "${VCToolsInstallDir}/modules/std.ixx")
 
 add_subdirectory(001_module)
+add_subdirectory(002_iostream)
+add_subdirectory(003_move)
+add_subdirectory(004_fstream)
