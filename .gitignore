@@ -1,0 +1,8 @@
+cmake-build-*/
+*.xml
+*.iml
+.idea
+/out
+/CMakeSettings.json
+/*.pdb
+/.vs
