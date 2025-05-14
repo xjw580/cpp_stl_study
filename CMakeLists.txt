@@ -1,10 +1,15 @@
 cmake_minimum_required(VERSION 3.31)
 project(cpp_stl_study)
 
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# 启用模块扫描
-set(CMAKE_EXPERIMENTAL_CXX_MODULE_CMAKE_API "2182bf5c-ef0d-489a-91da-49dbc3090d2a")
-set(CMAKE_EXPERIMENTAL_CXX_MODULE_DYNDEP 1)
+include(build)
+
+get_filename_component(VCToolsInstallDir "$ENV{VCToolsInstallDir}" ABSOLUTE)
+
+set(STD_IXX_PATH "${VCToolsInstallDir}/modules/std.ixx")
+
+add_subdirectory(001_module)
