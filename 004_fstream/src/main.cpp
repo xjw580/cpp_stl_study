@@ -6,7 +6,7 @@ Version:1.0.0
 
 Date:2025/5/14 10:05
 
-Description:
+Description:文件输入输出
 
 **************************************************************************/
 
@@ -74,6 +74,7 @@ static void info() {
 static void copy() {
     std::ifstream in;
     std::ofstream out;
+    std::fstream file;
     in.open(R"(C:\Users\28671\Documents\1.pdf)", std::ios::binary);
     if (!in) {
         std::cerr << "Unable to open file!" << std::endl;

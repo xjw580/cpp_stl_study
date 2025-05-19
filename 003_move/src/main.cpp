@@ -47,23 +47,29 @@ void passByConstRef(const MyClass& obj) {
     std::cout << "Inside passByConstRef\n";
 }
 
+MyClass get() {
+    MyClass obj;
+    return obj;
+}
+
 int main() {
-    std::cout << "--- Creating object a ---\n";
-    MyClass a;
-
-    std::cout << "\n--- Call: passByValue(a) ---\n";
-    passByValue(a);  // 拷贝构造
-
-    std::cout << "\n--- Call: passByValue(std::move(a)) ---\n";
-    passByValue(std::move(a));  // 移动构造
-
-    std::cout << "\n--- Call: passByRValueRef(std::move(a)) ---\n";
-    passByRValueRef(std::move(a));  // 右值引用绑定，不构造
-
-    std::cout << "\n--- Call: passByConstRef(a) ---\n";
-    passByConstRef(a);  // const 引用绑定，不构造
-
-    std::cout << "\n--- End of main ---\n";
+    MyClass obj = get();
+    // std::cout << "--- Creating object a ---\n";
+    // MyClass a;
+    //
+    // std::cout << "\n--- Call: passByValue(a) ---\n";
+    // passByValue(a);  // 拷贝构造
+    //
+    // std::cout << "\n--- Call: passByValue(std::move(a)) ---\n";
+    // passByValue(std::move(a));  // 移动构造
+    //
+    // std::cout << "\n--- Call: passByRValueRef(std::move(a)) ---\n";
+    // passByRValueRef(std::move(a));  // 右值引用绑定，不构造
+    //
+    // std::cout << "\n--- Call: passByConstRef(a) ---\n";
+    // passByConstRef(a);  // const 引用绑定，不构造
+    //
+    // std::cout << "\n--- End of main ---\n";
     return 0;
 }
 
