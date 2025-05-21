@@ -31,6 +31,6 @@ macro(my_add_target name)
     )
 
     # 确保模块目录被包含
-    target_include_directories(${name} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/inluce")
+    target_include_directories(${name} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 endmacro()
