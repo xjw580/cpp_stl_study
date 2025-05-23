@@ -19,7 +19,7 @@ struct compare {
 };
 
 
-void demo1() {
+void sort() {
     // 创建一个自定义类型的优先队列，使用最小堆
     std::priority_queue<int, std::vector<int>, decltype([](const int &lhs, const int &rhs) { return lhs > rhs; })> pq_min;
     // std::priority_queue<int, std::vector<int>, std::greater<int>> pq_min;
@@ -41,6 +41,6 @@ void demo1() {
 }
 
 void main() {
-    demo1();
+    sort();
     std::cout.flush();
 }

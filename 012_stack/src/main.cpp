@@ -12,7 +12,7 @@ Description:
 
 import std;
 
-void demo1() {
+void sort() {
     std::stack<int> s;
 
     // 向栈中添加元素
@@ -48,6 +48,6 @@ void demo1() {
 }
 
 void main() {
-    demo1();
+    sort();
     std::cout.flush();
 }

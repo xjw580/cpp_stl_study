@@ -12,7 +12,7 @@ Description:
 
 import std;
 
-void demo1() {
+void sort() {
     std::forward_list l1{1, 2, 3, 4, 5};
     std::cout << "front: " << l1.front() << std::endl;
 
@@ -27,6 +27,6 @@ void demo1() {
 }
 
 void main() {
-    demo1();
+    sort();
     std::cout.flush();
 }

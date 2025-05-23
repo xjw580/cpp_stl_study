@@ -12,7 +12,7 @@ Description:
 
 import std;
 
-void demo1() {
+void sort() {
     // 声明一个整型 set 容器
     std::set<int, std::greater<int> > mySet;
     // std::set<int> mySet;
@@ -82,6 +82,6 @@ void demo1() {
 }
 
 void main() {
-    demo1();
+    sort();
     std::cout.flush();
 }

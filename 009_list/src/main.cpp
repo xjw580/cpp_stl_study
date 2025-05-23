@@ -66,7 +66,7 @@ public:
     }
 };
 
-void demo1() {
+void sort() {
     // 创建一个整数类型的列表
     std::list<int> numbers;
 
@@ -107,7 +107,7 @@ void demo1() {
     std::cout << std::endl;
 }
 
-void demo2() {
+void shared_ptr_demo() {
     std::list<Student> student_list{Student{9, ""}, Student{18, ""}, Student{11, ""}, Student{10, ""}, Student{10, ""}};
     std::cout << std::setw(15) << std::left << std::setfill('=') << "raw" << "\n";
     for (const auto &list: student_list) {
@@ -126,7 +126,7 @@ void demo2() {
 }
 
 void main() {
-    demo1();
+    sort();
     // Student student1{18, String("df")};
     // demo2();
     std::cout.flush();

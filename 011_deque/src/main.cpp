@@ -12,7 +12,7 @@ Description:
 
 import std;
 
-void demo1() {
+void sort() {
     std::deque<int> myDeque;
 
     // 插入元素
@@ -39,7 +39,7 @@ void demo1() {
     std::cout << std::endl;
 }
 
-void demo2() {
+void shared_ptr_demo() {
     std::deque<int> d;
 
     // 向双端队列中添加元素
@@ -66,6 +66,6 @@ void demo2() {
 
 void main() {
     // demo1();
-    demo2();
+    shared_ptr_demo();
     std::cout.flush();
 }

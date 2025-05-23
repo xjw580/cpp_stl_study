@@ -1,4 +1,4 @@
-﻿#include <utility>
+﻿
 
 /**************************************************************************
 
@@ -14,7 +14,7 @@ Description:
 
 import std;
 
-void demo1() {
+void sort() {
     // 创建一个 map 容器，存储员工的姓名和年龄
     std::map<std::string, int, std::greater<std::string> > employees;
 
@@ -53,11 +53,8 @@ public:
 };
 
 std::ostream &operator<<(std::ostream &os, const Student &s) {
-    auto basic_string = std::format("Student{id: {}, age: {}, name: {}}", s.id, s.age, s.name);
-    // os << "Student{id: " << s.id
-    //         << ", age: " << s.age
-    //         << ", name: " << s.name << "}";
-    os << basic_string;
+    // 使用 {{ 和 }} 转义
+    os << std::format("Student{{id: {}, age: {}, name: {}}}", s.id, s.age, 1);
     return os;
 }
 
@@ -68,7 +65,7 @@ struct std::hash<Student> {
     }
 };
 
-void demo2() {
+void shared_ptr_demo() {
     Student student1{112, 18, "zerg"};
     Student student2{112, 19, "queen"};
     std::hash<Student> hasher;

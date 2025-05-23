@@ -12,7 +12,7 @@ Description:
 
 import std;
 
-void demo1() {
+void sort() {
     // 创建一个整数队列
     std::queue<int> q;
 
@@ -39,6 +39,6 @@ void demo1() {
 }
 
 void main() {
-    demo1();
+    sort();
     std::cout.flush();
 }

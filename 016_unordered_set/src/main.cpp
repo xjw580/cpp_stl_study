@@ -12,7 +12,7 @@ Description:
 
 import std;
 
-void demo1() {
+void sort() {
     // 创建一个整数类型的 unordered_set
     std::unordered_set<int> uset;
 
@@ -54,7 +54,7 @@ void demo1() {
     std::cout << "After clearing, is uset empty? " << (uset.empty() ? "Yes" : "No") << std::endl;
 }
 
-void demo2() {
+void shared_ptr_demo() {
     std::unordered_set<int> uset{1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10, 10};
     size_t bucket = uset.bucket(1);
     std::cout << "pos: " << bucket << std::endl;
@@ -74,6 +74,6 @@ void demo2() {
 
 void main() {
     // demo1();
-    demo2();
+    shared_ptr_demo();
     std::cout.flush();
 }

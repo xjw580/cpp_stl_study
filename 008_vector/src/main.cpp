@@ -14,7 +14,7 @@ import std;
 
 using namespace std;
 
-void demo1() {
+void sort() {
     vector<string> myvt; // 定义模板类对象
     myvt.reserve(4); // 设置大小
     cout << "The size is 4." << endl;
@@ -53,7 +53,7 @@ void demo1() {
     }
 }
 
-void demo2() {
+void shared_ptr_demo() {
     // 按上述顺序使用的构造函数：
     std::vector<int> first; // 整数的空向量
     std::vector<int> second(4, 100); // 值为100的四个整数

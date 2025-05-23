@@ -17,7 +17,7 @@ namespace fs = boost::filesystem;
 // namespace fs = std::filesystem;
 
 // 路径拼接、解析
-void demo1() {
+void sort() {
     fs::path p1("S:/test");
     fs::path p2("data.txt");
     fs::path full = p1 / p2;
@@ -25,7 +25,7 @@ void demo1() {
 }
 
 // 创建目录 / 删除目录
-void demo2() {
+void shared_ptr_demo() {
     fs::create_directory("output");
     fs::remove("output");
 }
